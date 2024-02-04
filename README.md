@@ -1,4 +1,4 @@
-# unpkgify
+# esm-unpkgify
 
 ## usage
 
@@ -8,6 +8,9 @@ import {unpkgify} from "unpkgify"
 console.log(unpkgify(`
 import {foo, ffoo as feefoo} from "foo"
 import * as bar /*annoying comment*/ from "bar"
+import {wont, be, changed} from "https://fully.qualified.url/some-file"
+
+function getBaz(){return import("baz")}
 
 ignoreStrings(\`import * as x from "leftAlone"\`)
 `))
@@ -18,6 +21,7 @@ prints
 ```JS
 import {foo, ffoo as feefoo} from "https://unpkg.com/foo?module"
 import * as bar /*annoying comment*/  from "https://unpkg.com/bar?module"
+import {wont, be, changed} from "https://fully.qualified.url/some-file"
 
 ignoreStrings(`import * as x from "leftAlone"`)
 
