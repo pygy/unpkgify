@@ -3,7 +3,7 @@
 ## usage
 
 ```JS
-import {unpkgify} from "unpkgify"
+import {unpkgify} from "esm-unpkgify"
 
 console.log(unpkgify(`
 import {foo, ffoo as feefoo} from "foo"
