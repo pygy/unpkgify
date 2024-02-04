@@ -1,0 +1,1 @@
+export {unpkgify} from "./src/main.js"
