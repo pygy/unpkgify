@@ -23,6 +23,8 @@ import {foo, ffoo as feefoo} from "https://unpkg.com/foo?module"
 import * as bar /*annoying comment*/  from "https://unpkg.com/bar?module"
 import {wont, be, changed} from "https://fully.qualified.url/some-file"
 
+function getBaz(){return import("https://unpkg.com/baz?module")}
+
 ignoreStrings(`import * as x from "leftAlone"`)
 
 ```

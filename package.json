@@ -1,7 +1,7 @@
 {
   "name": "esm-unpkgify",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Takes JS source code, and turns raw ES module specifiers into unpkg urls.",
   "main": "index.js",
   "scripts": {
